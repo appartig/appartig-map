@@ -171,8 +171,13 @@
 
 	function aamp_save_meta($post_id, $post){
 		
-		foreach ($_POST as $the_posted_key => $the_posted_value) {
-			update_post_meta($post_id, $the_posted_key, $the_posted_value);
+		$keys = array("aamp_lat", "aamp_lng", "aamp_url");
+		
+		if ($post->post_type == "aamp"){
+			foreach ($_POST as $the_posted_key => $the_posted_value) {
+
+				if (in_array($the_posted_key, $keys)) update_post_meta($post_id, $the_posted_key, $the_posted_value);
+			}
 		}
 	}
 
