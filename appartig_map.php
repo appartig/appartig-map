@@ -167,14 +167,16 @@
 	** Map Shortcode
 	******************************************************/
 
-	add_shortcode('appartig-map', function (){
+	add_shortcode('appartig-map', function ($atts = [], $content = null, $tag = ''){
+
+		
+		if (isset($atts["class"])) $class = explode(" ", $atts["class"]);
+		$class[] = 'aamp';
 
 ?>
 
-	<div class="aamp">
-		<div id="aamp_map" class="aamp__map">
-			
-		</div>
+	<div class="<?php echo implode(' ', $class); ?>">
+		<div id="aamp_map" class="aamp__map"></div>
 	</div>
 <?php
 		
