@@ -1,6 +1,6 @@
 # AppArtig Map Wordpress-Plugin
 
-Current Release: 1.1.2
+Current Release: 2.1.1
 
 ## Usage
 
