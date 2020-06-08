@@ -3,7 +3,7 @@
     /*
         Plugin Name: AppArtig Map
         Description: Plugin for Map with Linked Markers and Backend for editing Locations
-        Version:     1.1.1
+        Version:     1.1.2
         Author:      AppArtig e.U.
         Author URI:  https://www.appartig.at
         License:     APPARTIG/AGB
