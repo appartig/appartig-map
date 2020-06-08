@@ -1,5 +1,7 @@
 # AppArtig Map Wordpress-Plugin
 
+Current Release: 1.1.2
+
 ## Usage
 
 Only `aamp` Class:
